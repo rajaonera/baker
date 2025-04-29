@@ -1,39 +1,46 @@
-# Gestion de Boulangerie
+# Projet de Gestion de Boulangerie
 
-Ce projet est une application de gestion complète pour une boulangerie artisanale. Il couvre la production, le stock, les ventes, les finances et la gestion du personnel.
+Ce projet est une application métier développée en Java et PostgreSQL pour gérer les activités d'une boulangerie artisanale : production, stock, personnel, ventes et finances.
 
-## Fonctionnalités principales
+## Fonctionnalités
 
-- **Gestion de la production**
-  - Planification des pains, viennoiseries, pâtisseries
-  - Recettes avec quantités d’ingrédients
-  - Suivi des étapes de fabrication
+### 1. Fabrication des produits
+- Définition des recettes avec les ingrédients nécessaires
+- Calcul automatique des quantités à prélever selon la production
+- Génération du stock de produits finis après fabrication
 
-- **Gestion des stocks**
-  - Suivi des matières premières (quantité, date de péremption)
-  - Gestion des produits finis
-  - Alertes de seuil de réapprovisionnement
+### 2. Mouvements de stock
+- Suivi des entrées et sorties de matières premières
+- Mise à jour automatique du stock après production ou vente
+- Gestion des stocks critiques et ruptures
 
-- **Gestion des ventes**
-  - Enregistrement des ventes (comptoir et livraisons)
-  - Calcul automatique des marges
-  - Rapports journaliers
+### 3. Gestion financière
+- Suivi des ventes, achats et dépenses internes
+- Calcul des marges par produit
+- Journal des mouvements financiers
 
-- **Suivi financier**
-  - Dépenses, recettes, marges
-  - Journal de caisse
-  - Statistiques mensuelles
+### 4. Gestion des ventes et achats
+- Saisie des commandes et livraisons
+- Historique des ventes par produit et par client
+- Enregistrement des achats de matières premières
 
-- **Gestion du personnel**
-  - Fiches employés (grade, taux journalier, horaires)
-  - Suivi des présences et des performances
+### 5. Gestion du personnel
+- Fiches employés avec taux journalier et grade
+- Calcul automatique des coûts de main-d’œuvre
+- Suivi du temps de travail quotidien
 
 ## Technologies utilisées
 
-- **Backend** : Java (Spring MVC ou Servlets), PostgreSQL
-- **Frontend** : HTML/CSS/JavaScript ou React Native (mobile)
-- **Autres** : Docker, Git
+- **Langage** : Java SE
+- **Base de données** : PostgreSQL 15
+- **IDE** : IntelliJ IDEA / VSCode
+- **Architecture** : MVC
+- **Multithreading** : Optimisation de la génération de blocs (ex. éponges)
 
 ## Objectif
 
-Offrir un outil simple, intuitif et adaptable aux besoins des petites boulangeries pour améliorer leur gestion quotidienne.
+Offrir une solution complète pour gérer efficacement tous les aspects d'une boulangerie artisanale, avec une logique métier claire, un suivi des marges, et une automatisation des calculs internes.
+
+---
+
+> Ce projet est en cours d’évolution vers une version plus générique et modulaire, adaptée à d’autres types d’artisanat.
